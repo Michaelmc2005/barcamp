@@ -1,0 +1,28 @@
+[
+  {
+    "username": "michael",
+    "publicKey": {
+      "alg": "RSA-OAEP-256",
+      "e": "AQAB",
+      "ext": true,
+      "key_ops": [
+        "encrypt"
+      ],
+      "kty": "RSA",
+      "n": "u1Yp5DZK8wZHCrRYshFqpW5mmqa0GUidDiKcP161SjWYW83xwoPeIq7hX2mEXyGfNA0nm2mKgVqJckxLX_ElfxVRpZs3tOuLgCQVfnkZNC_UATDkyK_u721sglm0ihb8bDbUUdga1313dQMdjhRNZj4pdo9RJOyqclCKqMmkMcw-hRTBmY0IRIzB35wEcjEdujhLSg08R2l78-0IRT2_cta9XBgkgvthamqRuAw-RS63yyU-L64NKWhvo9DvOglwxGKiionjN_OWeq5v6MDDXS7ICe9-6mNnhj0XnVz2ULmLKe84d4ds9m5xNnJUxINt2k6PqnHXKqQPyLbkCMjM5Q"
+    }
+  },
+  {
+    "username": "josh",
+    "publicKey": {
+      "alg": "RSA-OAEP-256",
+      "e": "AQAB",
+      "ext": true,
+      "key_ops": [
+        "encrypt"
+      ],
+      "kty": "RSA",
+      "n": "uR-B732w70-89wgb_-SxCSfBXN1FPtR4bTDBz8xvv59dPZrA2egbCPo-Z3abnZaEvZ70oUWjt0VS3vid3bgLMPZRMkaAQarzxnz0CXnuPc6HYh-UXYP132GGiWCf_6LCjAvDP--pSeFtl32ueyPW8olM-h-fAR1BuYg3yXJnxeeg9DyPk2UNrzLbYS0vR0NkJcJ5hJbDbdB-PlpbysQBPOJ2us5uMcT4_jtR198-qBjpOXL4ErSAeDtby4rBTnWBiSrwsUzUO5HCSbypvFlKb5qoLgc-U6U4_SiiWaP1GWpEYvFS_3NctXY8fuHW8imDafUyo5KZPqr_5xzqt2fkdw"
+    }
+  }
+]

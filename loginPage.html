@@ -60,6 +60,49 @@
     </form>
   </div>
 
-  
+  <script>
+    async function generateKeyPair() {
+      const keyPair = await window.crypto.subtle.generateKey(
+        {
+          name: "RSA-OAEP",
+          modulusLength: 2048,
+          publicExponent: new Uint8Array([1, 0, 1]),
+          hash: "SHA-256",
+        },
+        true,
+        ["encrypt", "decrypt"]
+      );
+      const privateKey = await window.crypto.subtle.exportKey(
+        "jwk",
+        keyPair.privateKey
+      );
+      localStorage.setItem("privateKey", JSON.stringify(privateKey));
+      const publicKey = await window.crypto.subtle.exportKey(
+        "jwk",
+        keyPair.publicKey
+      );
+      return publicKey;
+    }
+
+    document
+      .getElementById("login-form")
+      .addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const username = document.getElementById("username").value.trim();
+        if (!username) {
+          alert("Please enter a username.");
+          return;
+        }
+        const publicKey = await generateKeyPair();
+        await fetch("/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ username, publicKey }),
+        });
+        window.location.href = "/chatComponent.html?username=" + encodeURIComponent(username);
+      });
+  </script>
 </body>
 </html>
