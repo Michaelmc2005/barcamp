@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #1e1e1e;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-container {
+      background-color: #2d2d2d;
+      padding: 40px;
+      border-radius: 10px;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    label, input, button {
+      display: block;
+      width: 100%;
+    }
+    label {
+      margin-bottom: 5px;
+    }
+    input {
+      background-color: #3d3d3d;
+      color: #ffffff;
+      border: none;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #4e9a06;
+      color: #ffffff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #3d7a04;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form id="login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  
+</body>
+</html>
